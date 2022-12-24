@@ -1,0 +1,33 @@
+{
+    "pagination": {
+      "limit": 100,
+      "offset": 0,
+      "count": 100,
+      "total": 10000
+    },
+    "data": [
+      {
+        "author": "Ayo Yusuf",
+        "title": "Arsenal Premier League Dream Continues with West Ham Visit",
+        "description": "The English Premier League resumes on Boxing Day after six weeks break due to the FIFA World Cup in Qatar and leaders, Arsenal, would be hoping to continue from where",
+        "url": "https://www.thisdaylive.com/index.php/2022/12/24/arsenal-premier-league-dream-continues-with-west-ham-visit/",
+        "source": "thisdaylive",
+        "image": null,
+        "category": "general",
+        "language": "en",
+        "country": "us",
+        "published_at": "2022-12-24T01:05:09+00:00"
+      },
+      {
+        "author": null,
+        "title": "Blizzard conditions in multiple states. Storm surge in many coastal areas. These are just some of the storm's latest developments.",
+        "description": "Track weather | How to help | CNN's lite site | How to stay warm",
+        "url": "https://www.cnn.com/2022/12/23/weather/christmas-arctic-winter-storm-poweroutages-friday/index.html",
+        "source": "CNN",
+        "image": null,
+        "category": "general",
+        "language": "en",
+        "country": "us",
+        "published_at": "2022-12-24T01:05:04+00:00"
+      }
+    ]}
