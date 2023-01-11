@@ -9,17 +9,17 @@ const fetchNews = async (
   // GraphQL query
   const query = gql`
     query MyQuery(
-        $access_key: String!
-        $categories: String!
-        $keywords: String
+      $access_key: String!
+      $categories: String!
+      $keywords: String
     ) {
       myQuery(
-        access_key: $access_key 
+        access_key: $access_key
         categories: $categories
         countries: "gb"
         sort: "published_desc"
         keywords: $keywords
-        ) {
+      ) {
         data {
           author
           category
@@ -63,18 +63,14 @@ const fetchNews = async (
     }
   );
 
-    console.log(
-        "LOADING NEW DATA FROM API FOR CATEGORY >>>",
-        category,
-        keywords
-    )
+  console.log("LOADING NEW DATA FROM API FOR CATEGORY >>>", category, keywords);
 
-    const newsResponse = await res.json()
-  
+  const newsResponse = await res.json();
+
   // Sort function by images vs not image present
-        const news = sortNewsByImage(newsResponse.data.myQuery)
+  const news = sortNewsByImage(newsResponse.data?.myQuery);
   // return res
-  return news
+  return news;
 };
 
 export default fetchNews;
